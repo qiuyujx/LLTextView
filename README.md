@@ -10,14 +10,14 @@ LLTextView is an placeholder enabled subclass of UITextView.
 
 Copy LLTextView.h & LLTextView.m to your project, and make sure that the references are added to correct target.
 
-+ Configuration from Storyboard
+## Configuration from Storyboard
 
 Simply drag a UITextView from Object Library, and put it wherever you want on your storyboard.
 Then, reveal "Utilities" of Xcode, select the UITextView and configure its in Identity Inspector as below
 
 ![Storyboard Configuration](http://roommateradar.com/imageReferences/LLTextViewConfig.png)
 
-+ Configuration programmatically
+## Configuration programmatically
 
 Set placeholder text
 
