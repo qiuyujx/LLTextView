@@ -19,7 +19,51 @@
     </section>
 
     <section class="main-content">
-      <p>An placeholder enabled subclass of UITextView. More features will be added later.</p>
+      <h1>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
+
+<p>LLTextView is an placeholder enabled subclass of UITextView.</p>
+
+<h1>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h1>
+
+<ul>
+<li>LLTextView is customisable</li>
+<li>LLTextView supports configuration from User Defined Runtime Attributes in Storyboard</li>
+<li>LLTextView placeholder is overlay that separated from text input, so feel free to use textView.text to get the actual text</li>
+</ul>
+
+<h1>
+<a id="how-to-use-lltextview" class="anchor" href="#how-to-use-lltextview" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use LLTextView</h1>
+
+<p>Copy LLTextView.h &amp; LLTextView.m to your project, and make sure that the references are added to correct target.</p>
+
+<ul>
+<li>Configuration from Storyboard
+Simply drag a UITextView from Object Library, and put it wherever you want on your storyboard.
+Then, reveal "Utilities" of Xcode, select the UITextView and configure its in Identity Inspector as below</li>
+</ul>
+
+<p><img src="http://roommateradar.com/imageReferences/LLTextViewConfig.png" alt="Storyboard Configuration"></p>
+
+<ul>
+<li>Configuration programmatically
+Set placeholder text
+[self.textView setPlaceholderText:@"This is programmatically configured placeholder"];
+Set placeholder color
+[self.textView setPlaceholderColor:[UIColor blackColor]];
+Set placeholder animation duration
+[self.textView setPlaceholderAnimationDurationFloat:0.3];
+// Alternative setting placeholderAnimationDuration
+[self.textView setPlaceholderAnimationDuration:[NSNumber numberWithFloat:0.3]];
+Set placeholderFrame
+[self.textView setPlaceholderBounds:CGRectMake(8, 8, self.textView.frame.size.width - 16, 0)];
+// Alternative setting placeholderFrame
+[self.textView setPlaceholderFrame:[NSValue valueWithCGRect:CGRectMake(8, 8, self.textView.frame.size.width - 16, 0)]];</li>
+</ul>
+
+<h3>
+<a id="please-feel-free-to-advise-me-in-any-aspects-might-improve-this-library" class="anchor" href="#please-feel-free-to-advise-me-in-any-aspects-might-improve-this-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Please feel free to advise me in any aspects might improve this library</h3>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/qiuyujx/LLTextView">LLTextView</a> is maintained by <a href="https://github.com/qiuyujx">qiuyujx</a>.</span>
