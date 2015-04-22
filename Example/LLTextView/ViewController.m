@@ -42,11 +42,20 @@
     // Realese the following comments to show a different style of placeholder
     // Note that all the customisable properties of LLTextView are begin with "Placeholder", which makes easier for programming :)
     
+    /*
+    // Set placeholderText
     [self.textView setPlaceholderText:@"This is programmatically configured placeholder"];
+    // Set placeholderColor
     [self.textView setPlaceholderColor:[UIColor blackColor]];
-    [self.textView setPlaceholderAnimationDurationFloat:0.3]; // 
+    // Set placeholderAnimationDuration
+    [self.textView setPlaceholderAnimationDurationFloat:0.3];
+        // Alternative setting placeholderAnimationDuration
+    [self.textView setPlaceholderAnimationDuration:[NSNumber numberWithFloat:0.3]];
+    // Set placeholderFrame
     [self.textView setPlaceholderBounds:CGRectMake(8, 8, self.textView.frame.size.width - 16, 0)];
-    
+        // Alternative setting placeholderFrame
+    [self.textView setPlaceholderFrame:[NSValue valueWithCGRect:CGRectMake(8, 8, self.textView.frame.size.width - 16, 0)]];
+    */
 }
 
 - (void)didReceiveMemoryWarning {
