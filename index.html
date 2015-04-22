@@ -47,20 +47,32 @@ Then, reveal "Utilities" of Xcode, select the UITextView and configure its in Id
 <p><img src="http://roommateradar.com/imageReferences/LLTextViewConfig.png" alt="Storyboard Configuration"></p>
 
 <ul>
-<li>Configuration programmatically
-Set placeholder text
-[self.textView setPlaceholderText:@"This is programmatically configured placeholder"];
-Set placeholder color
-[self.textView setPlaceholderColor:[UIColor blackColor]];
-Set placeholder animation duration
-[self.textView setPlaceholderAnimationDurationFloat:0.3];
+<li>
+<p>Configuration programmatically
+Set placeholder text</p>
+
+<p>[self.textView setPlaceholderText:@"This is programmatically configured placeholder"];</p>
+</li>
+</ul>
+
+<p>Set placeholder color</p>
+
+<pre><code>[self.textView setPlaceholderColor:[UIColor blackColor]];
+</code></pre>
+
+<p>Set placeholder animation duration</p>
+
+<pre><code>[self.textView setPlaceholderAnimationDurationFloat:0.3];
 // Alternative setting placeholderAnimationDuration
 [self.textView setPlaceholderAnimationDuration:[NSNumber numberWithFloat:0.3]];
-Set placeholderFrame
-[self.textView setPlaceholderBounds:CGRectMake(8, 8, self.textView.frame.size.width - 16, 0)];
+</code></pre>
+
+<p>Set placeholderFrame</p>
+
+<pre><code>[self.textView setPlaceholderBounds:CGRectMake(8, 8, self.textView.frame.size.width - 16, 0)];
 // Alternative setting placeholderFrame
-[self.textView setPlaceholderFrame:[NSValue valueWithCGRect:CGRectMake(8, 8, self.textView.frame.size.width - 16, 0)]];</li>
-</ul>
+[self.textView setPlaceholderFrame:[NSValue valueWithCGRect:CGRectMake(8, 8, self.textView.frame.size.width - 16, 0)]];
+</code></pre>
 
 <h3>
 <a id="please-feel-free-to-advise-me-in-any-aspects-might-improve-this-library" class="anchor" href="#please-feel-free-to-advise-me-in-any-aspects-might-improve-this-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Please feel free to advise me in any aspects might improve this library</h3>
