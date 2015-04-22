@@ -14,6 +14,7 @@
 		08230B8C1AE75B400081DD78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08230B8B1AE75B400081DD78 /* Images.xcassets */; };
 		08230B8F1AE75B400081DD78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08230B8D1AE75B400081DD78 /* LaunchScreen.xib */; };
 		08230B9B1AE75B400081DD78 /* LLTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08230B9A1AE75B400081DD78 /* LLTextViewTests.m */; };
+		08230BA61AE75C8C0081DD78 /* LLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08230BA51AE75C8C0081DD78 /* LLTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		08230B941AE75B400081DD78 /* LLTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08230B991AE75B400081DD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08230B9A1AE75B400081DD78 /* LLTextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLTextViewTests.m; sourceTree = "<group>"; };
+		08230BA41AE75C8C0081DD78 /* LLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLTextView.h; path = ../../LLTextView/LLTextView.h; sourceTree = "<group>"; };
+		08230BA51AE75C8C0081DD78 /* LLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLTextView.m; path = ../../LLTextView/LLTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 				08230B881AE75B400081DD78 /* Main.storyboard */,
 				08230B8B1AE75B400081DD78 /* Images.xcassets */,
 				08230B8D1AE75B400081DD78 /* LaunchScreen.xib */,
+				08230BA71AE75C940081DD78 /* LLTextView */,
 				08230B7E1AE75B400081DD78 /* Supporting Files */,
 			);
 			path = LLTextView;
@@ -117,6 +121,15 @@
 				08230B991AE75B400081DD78 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08230BA71AE75C940081DD78 /* LLTextView */ = {
+			isa = PBXGroup;
+			children = (
+				08230BA41AE75C8C0081DD78 /* LLTextView.h */,
+				08230BA51AE75C8C0081DD78 /* LLTextView.m */,
+			);
+			name = LLTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				08230B871AE75B400081DD78 /* ViewController.m in Sources */,
 				08230B841AE75B400081DD78 /* AppDelegate.m in Sources */,
 				08230B811AE75B400081DD78 /* main.m in Sources */,
+				08230BA61AE75C8C0081DD78 /* LLTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +432,7 @@
 				08230BA01AE75B400081DD78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08230BA11AE75B400081DD78 /* Build configuration list for PBXNativeTarget "LLTextViewTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +441,7 @@
 				08230BA31AE75B400081DD78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
